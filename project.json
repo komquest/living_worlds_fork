@@ -1,0 +1,283 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Various animated pixel art wallpapers created by Mark Ferrari, based on http://www.effectgames.com/demos/canvascycle/\r\n\r\nThe scenes in this wallpaper use color palette cycling to achieve smooth looping animations, meaning there are no videos used so it can scale nicely to high resolutions while still maintaining the sharp pixel art look.\r\n\r\nFeatures:\r\n- A total of 35 animated scenes\r\n- Wallpaper adjusts to screen resolution\r\n- Wallpaper can change randomly base on a set interval\r\n- Or choose a fixed wallpaper to display\r\n- Adjustable FPS limit to keep performance impact low\r\n- Adjustable animation speed\r\n- Optional ambient audio with adjustable volume for some scenes\r\n- Switch between smooth or classic color blending\r\n\r\n\r\nI have also created a wallpaper based on the Living Worlds scenes:\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2119347960",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"audio_enabled" : 
+			{
+				"order" : 71,
+				"text" : "Sound",
+				"type" : "bool",
+				"value" : false
+			},
+			"audio_volume" : 
+			{
+				"condition" : "audio_enabled.value == true",
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 72,
+				"precision" : 2,
+				"step" : 0.05,
+				"text" : "Volume",
+				"type" : "slider",
+				"value" : 1
+			},
+			"blend_shift" : 
+			{
+				"order" : 70,
+				"text" : "Blend Shift",
+				"type" : "bool",
+				"value" : true
+			},
+			"fps" : 
+			{
+				"fraction" : false,
+				"max" : 60,
+				"min" : 5,
+				"order" : 101,
+				"precision" : 0,
+				"step" : 1,
+				"text" : "FPS",
+				"type" : "slider",
+				"value" : 30
+			},
+			"random_delay" : 
+			{
+				"condition" : "random_mode.value == true",
+				"fraction" : true,
+				"max" : 60,
+				"min" : 0.5,
+				"order" : 106,
+				"precision" : 1,
+				"step" : 0.5,
+				"text" : "Switch scene (minutes)",
+				"type" : "slider",
+				"value" : 5
+			},
+			"random_mode" : 
+			{
+				"order" : 105,
+				"text" : "Random Mode",
+				"type" : "bool",
+				"value" : false
+			},
+			"sceneselect" : 
+			{
+				"condition" : "random_mode.value == false",
+				"options" : 
+				[
+					{
+						"label" : "Jungle Waterfall - Morning",
+						"value" : "0"
+					},
+					{
+						"label" : "Seascape - Day",
+						"value" : "1"
+					},
+					{
+						"label" : "Mountain Stream - Morning",
+						"value" : "2"
+					},
+					{
+						"label" : "Winter Forest - Snow",
+						"value" : "3"
+					},
+					{
+						"label" : "Jungle Waterfall - Rain",
+						"value" : "4"
+					},
+					{
+						"label" : "Mountain Storm - Day",
+						"value" : "5"
+					},
+					{
+						"label" : "Deep Forest - Day",
+						"value" : "6"
+					},
+					{
+						"label" : "Highland Ruins - Rain",
+						"value" : "7"
+					},
+					{
+						"label" : "Rough Seas - Day",
+						"value" : "8"
+					},
+					{
+						"label" : "Crystal Caves - Day",
+						"value" : "9"
+					},
+					{
+						"label" : "Haunted Castle Ruins - Rain",
+						"value" : "10"
+					},
+					{
+						"label" : "Jungle Waterfall - Night",
+						"value" : "11"
+					},
+					{
+						"label" : "Mirror Pond - Rain",
+						"value" : "12"
+					},
+					{
+						"label" : "Mountain Stream - Night",
+						"value" : "13"
+					},
+					{
+						"label" : "Aquarius - Day",
+						"value" : "14"
+					},
+					{
+						"label" : "Harbor Town - Night",
+						"value" : "15"
+					},
+					{
+						"label" : "Deep Forest - Rain",
+						"value" : "16"
+					},
+					{
+						"label" : "Mountain Fortress - Dusk",
+						"value" : "17"
+					},
+					{
+						"label" : "Water City Gates - Fog",
+						"value" : "18"
+					},
+					{
+						"label" : "Seascape - Sunset",
+						"value" : "19"
+					},
+					{
+						"label" : "Mirror Pond - Morning",
+						"value" : "20"
+					},
+					{
+						"label" : "Island Fires - Dusk",
+						"value" : "21"
+					},
+					{
+						"label" : "Forest Edge - Day",
+						"value" : "22"
+					},
+					{
+						"label" : "Mirror Pond - Afternoon",
+						"value" : "23"
+					},
+					{
+						"label" : "Jungle Waterfall - Afternoon",
+						"value" : "24"
+					},
+					{
+						"label" : "Swamp Cathedral - Day",
+						"value" : "25"
+					},
+					{
+						"label" : "Haunted Castle Ruins - Night",
+						"value" : "26"
+					},
+					{
+						"label" : "Deep Swamp - Day",
+						"value" : "27"
+					},
+					{
+						"label" : "Approaching Storm - Day",
+						"value" : "28"
+					},
+					{
+						"label" : "Pond Ripples - Dawn",
+						"value" : "29"
+					},
+					{
+						"label" : "Ice Wind - Day",
+						"value" : "30"
+					},
+					{
+						"label" : "Mountain Stream - Afternoon",
+						"value" : "31"
+					},
+					{
+						"label" : "Desert Heat Wave - Day",
+						"value" : "32"
+					},
+					{
+						"label" : "Magic Marsh Cave - Night",
+						"value" : "33"
+					},
+					{
+						"label" : "Seascape - Fog",
+						"value" : "34"
+					}
+				],
+				"order" : 108,
+				"text" : "Scene select",
+				"type" : "combo",
+				"value" : "0"
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"speed" : 
+			{
+				"fraction" : true,
+				"max" : 4,
+				"min" : 0,
+				"order" : 100,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Speed",
+				"type" : "slider",
+				"value" : 1
+			},
+			"stretch" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "Stretch",
+						"value" : "fill"
+					},
+					{
+						"label" : "Horizontal",
+						"value" : "horizontal"
+					},
+					{
+						"label" : "Vertical",
+						"value" : "vertical"
+					},
+					{
+						"label" : "None",
+						"value" : "none"
+					}
+				],
+				"order" : 65,
+				"text" : "Fit to Screen",
+				"type" : "combo",
+				"value" : "fill"
+			},
+			"transition_fade" : 
+			{
+				"order" : 100,
+				"text" : "Scene transition fade",
+				"type" : "bool",
+				"value" : true
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"ratingsex" : "none",
+	"ratingviolence" : "none",
+	"tags" : [ "Pixel art" ],
+	"title" : "Canvas Cycle - Animated Web Wallpaper",
+	"type" : "web",
+	"version" : 3,
+	"visibility" : "public",
+	"workshopid" : "2888304954",
+	"workshopurl" : "steam://url/CommunityFilePage/2888304954"
+}
